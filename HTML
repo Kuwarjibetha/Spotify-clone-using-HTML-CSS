@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/assets/logo.png">
+
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options">
+                        <img src="assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow </p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcast</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-navs">
+                <div class="sticky-nav">
+                    <div class="sticky-nav-icon">
+                        <img src="assets/backward_icon.png">
+                        <img src="assets/forward_icon.png" class="sticky-media">
+                    </div>
+                    <div class="sticky-nav-options">
+                        <button class="badge sticky-media">Explore Premium</button>
+                        <button class="badge" style="color: white; background-color: rgb(45, 44, 44);"><i
+                                class="fa-regular fa-circle-down" style="color: white;"></i>Install App</button>
+                        <i class="fa-regular fa-bell" style="color: white;"></i> <i class="fa-solid fa-user"
+                            style="color: white;"></i>
+                    </div>
+                </div>
+                <div class="sticky-nav-2col">
+                    <button class="sticky-nav-2col-1">All</button>
+                    <button class="sticky-nav-2col-2">Music</button>
+                    <button class="sticky-nav-2col-3">Podcasts</button>
+                </div>
+            </div>
+            <h2>Recently played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/sidhu moosewalaa.jpg">
+                    <p class="card-title">Sidhu Moose Wala....</p>
+                    <div class="card-info">varinder Brar,AP Dhillon and Karan Aujla</div>
+                </div>
+            </div>
+            <h2> Recommended for today</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/ab67616d0000b273e62ca3548e739bd85eebbbc9.jpeg">
+                    <p class="card-title">G.O.A.T.</p>
+                    <div class="card-info">Diljit Dosanjh</div>
+                </div>
+                <div class="card">
+                    <img src="assets/lalkara.jpeg">
+                    <p class="card-title">Lalkara</p>
+                    <div class="card-info">Diljit Dosanjh,Intense,Sultaan</div>
+                </div>
+                <div class="card">
+                    <img src="assets/ab67616d0000b2739416ed64daf84936d89e671c.jpeg">
+                    <p class="card-title">One Dance</p>
+                    <div class="card-info">Drake,Wizkid,Kyla</div>
+                </div>
+                <div class="card">
+                    <img src="assets/toosile slide.jpeg">
+                    <p class="card-title">Toosie Slide</p>
+                    <div class="card-info">Drake</div>
+                </div>
+                <div class="card">
+                    <img src="assets/until i found you.jpeg">
+                    <p class="card-title">Until I Found You</p>
+                    <div class="card-info">Stephen Sanchez,Em Beihold</div>
+                </div>
+                <div class="card">
+                    <img src="assets/man without love.jpeg">
+                    <p class="card-title">A Man without Love</p>
+                    <div class="card-info">Engelbert Humperdinck</div>
+                </div>
+                <div class="card">
+                    <img src="assets/punjabi-pump.jpeg">
+                    <p class="card-title">Punjabi Pump</p>
+                    <div class="card-info">Pump up your adrenaline with Punjabi hits!</div>
+                </div>
+                <div class="card">
+                    <img src="assets/hot-hits.jpeg">
+                    <p class="card-title">Hot Hits Punjabi</p>
+                    <div class="card-info">Catch the hottest Punjabi tracks with Shubh for his...</div>
+                </div>
+            </div>
+            <h2> Try something else</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/card1img.jpeg">
+                    <p class="card-title">Top 50-Global</p>
+                    <div class="card-info">Your daily update of the most played tracks right now-Global.</div>
+                </div>
+                <div class="card">
+                    <img src="assets/card2img.jpeg">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <div class="card-info">Darshan Raval</div>
+                </div>
+                <div class="card">
+                    <img src="assets/card3img.jpeg">
+                    <p class="card-title">Mere Pass Tum Ho</p>
+                    <div class="card-info">Silent Ocean Lofi Mix</div>
+                </div>
+                <div class="card">
+                    <img src="assets/card5img.jpeg">
+                    <p class="card-title">Top Songs Global </p>
+                    <div class="card-info">Your weekly update of the most played tracks right now - Global.</div>
+                </div>
+                <div class="card">
+                    <img src="assets/card6img.jpeg">
+                    <p class="card-title">Top Songs-India</p>
+                    <div class="card-info">Your weekly update of the most played tracks right now - India.</div>
+                </div>
+            </div>
+
+            <h2> Shows to try</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/the2johnnies.jpeg">
+                    <p class="card-title">The 2 Johnnies podcast</p>
+                    <div class="card-info">The 2 Johnnies</div>
+                </div>
+                <div class="card">
+                    <img src="assets/lateral.jpeg">
+                    <p class="card-title">Lateral with Tom Scott</p>
+                    <div class="card-info">Tom Scott and David Bodycombe</div>
+                </div>
+                <div class="card">
+                    <img src="assets/dont tell anyone.jpeg">
+                    <p class="card-title">don't tell anyone with...</p>
+                    <div class="card-info">pokimane</div>
+                </div>
+                <div class="card">
+                    <img src="assets/rotten.jpeg">
+                    <p class="card-title">Rotten Mango Video</p>
+                    <div class="card-info">Stephanie Soo</div>
+                </div>
+                <div class="card">
+                    <img src="assets/schumy.jpeg">
+                    <p class="card-title">Schumy Vanna Kaviyangal</p>
+                    <div class="card-info">Schumy Vanna Kaviyangal</div>
+                </div>
+                <div class="card">
+                    <img src="assets/darknet.jpeg">
+                    <p class="card-title">Darknet Diaries</p>
+                    <div class="card-info"> Podcast Jack Rhysider</div>
+                </div>
+            </div>
+            <h2> Suggested artists</h2>
+            <div class="cards-container">
+                <div class="circle-card">
+                    <img src="assets/moose.jpeg">
+                    <p class="card-title">Sidhu Moose Wala</p>
+                    <div class="card-info"> Artists</div>
+                </div>
+                <div class="circle-card">
+                    <img src="assets/diljit.jpeg">
+                    <p class="card-title">Diljit Dosanjh</p>
+                    <div class="card-info"> Artists</div>
+                </div>
+                <div class="circle-card">
+                    <img src="assets/intense.jpeg">
+                    <p class="card-title">Intense</p>
+                    <div class="card-info"> Artists</div>
+                </div>
+                <div class="circle-card">
+                    <img src="assets/j-statik.jpeg">
+                    <p class="card-title">J-statik</p>
+                    <div class="card-info"> Artists</div>
+                </div>
+                <div class="circle-card">
+                    <img src="assets/manni.jpeg">
+                    <p class="card-title">Manni Sandhu</p>
+                    <div class="card-info"> Artists</div>
+                </div>
+                <div class="circle-card">
+                    <img src="assets/sukha.jpeg">
+                    <p class="card-title">Sukha</p>
+                    <div class="card-info"> Artists</div>
+                </div>
+            </div>
+
+            <div class="container-bottom">
+                <div class="con-bot-1">
+                    <li class="con-bot-1-head">Company</li>
+                    <li class="con-bot-body">About</li>
+                    <li class="con-bot-body">Jobs</li>
+                    <li class="con-bot-body">For the Records</li>
+                </div>
+                <div class="con-bot-1">
+                    <li class="con-bot-1-head"> Communities</li>
+                    <li class="con-bot-body"> For Artists</li>
+                    <li class="con-bot-body"> Developers</li>
+                    <li class="con-bot-body"> Advertising</li>
+                    <li class="con-bot-body"> Investors</li>
+                    <li class="con-bot-body"> Vendors</li>
+                </div>
+                <div class="con-bot-1">
+                    <li class="con-bot-1-head"> Useful links</li>
+                    <li class="con-bot-body"> Support</li>
+                    <li class="con-bot-body"> Free Mobile App</li>
+                </div>
+                <div class="con-bot-1">
+                    <li class="con-bot-1-head"> Spotify plans</li>
+                    <li class="con-bot-body"> premium individual</li>
+                    <li class="con-bot-body"> premium duo</li>
+                    <li class="con-bot-body"> premium family</li>
+                    <li class="con-bot-body"> premium student</li>
+                    <li class="con-bot-body"> Spotify free</li>
+                </div>
+                <div class="con-bot-social">
+                    <li><i class="fa-brands fa-instagram"></i> </li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="left-footer-con">
+                     <li>Legal</li>
+                     <li> Safety & Privacy Centre</li>
+                     <li> Privacy Policy</li>
+                     <li> Cookies</li>
+                     <li> About us</li>
+                     <li> Accessibility</li>
+                </div>
+                <div class="right-footer-con">
+                    <i class="fa-solid fa-copyright"></i>
+                    <p>2024 Spotify AB</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="sidhu-player-icon"><img src="assets/sidhu-player-icon.jpeg"> </div>
+                <div class="sidhu-player-title">
+                    <p class="p1">Watch Out</p>
+                    <p class="p2">Sidhu Moose Wala,Sikander Kahlon,Mxrci</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="assets/player_icon1.png" class="player-controls-icons">
+                    <img src="assets/player_icon2.png" class="player-controls-icons">
+                    <img src="assets/player_icon3.png" class="player-controls-icons" style="opacity: 1; height: 2rem;">
+                    <img src="assets/player_icon4.png" class="player-controls-icons">
+                    <img src="assets/player_icon5.png" class="player-controls-icons">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time" style="color: white;">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-time" style="color: white;">3:33</span>
+
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-record-vinyl"></i>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-tablet-screen-button"></i>
+                <i class="fa-solid fa-volume-low"></i>
+                <input type="range" min="0" max="100" class="progress-bars">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
