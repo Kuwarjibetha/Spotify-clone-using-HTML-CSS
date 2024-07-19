@@ -1,0 +1,470 @@
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    margin: 1;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    gap: 0.6rem;
+}
+
+.sidebar {
+
+    background-color: rgb(0, 0, 0);
+    width:24.775rem;
+    border-radius: 1rem;
+}
+
+.nav{
+    background-color:rgb(22, 22, 22);
+    border-radius: 1rem;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+.nav .nav-option a {
+    color: white;
+    text-decoration: none;
+}
+.nav-option {
+line-height: 1.7rem;
+padding:0.5rem 0.75rem ;
+opacity: 0.8;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+    margin-right: 2rem;
+}
+.nav-option a{
+    font-size: 1rem;
+}
+.library{
+    background-color: rgb(22, 22, 22);
+    border-radius: 0.71rem;
+    height: 90%;
+    margin-top: 0.5rem;
+}
+
+.options{
+    display: flex;  
+    padding: 0.5rem 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.7rem;
+}
+.options .lib-options{
+    opacity: 0.5;
+    transition: 1s;
+}
+.options .lib-options:hover{
+    opacity: 1;
+}
+.options .lib-options a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.options .lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.options .icon{
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+
+}
+.options .icon i{
+    margin-right: 1rem;
+    opacity: 0.6;
+}
+.options .icon i:hover{
+    opacity: 1;
+}
+
+.lib-box{
+    
+}
+.lib-box .box{
+    height: 9rem;
+    background-color: #313131;
+    border-radius: 0.75rem;
+    margin: 0.5rem 0.4rem 1rem ;
+    padding: 0.1rem 1.25rem 0.51rem;
+}
+.box .box-p1{
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+}
+.box .box-p2{
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.78);
+    font-weight: 300;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    font-weight: 600;width: fit-content;
+    
+    
+}
+.main-content {
+    background-color: rgb(19, 19, 19);
+    width: 400px;
+    flex: 1;
+    border-radius: 1rem;
+    padding: 0 1rem 0 0.7rem;
+    overflow: scroll;
+}
+
+.sticky-navs{
+
+    background-color: rgb(19, 19, 19);
+    position: sticky;
+    top: 0;
+}
+.sticky-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.sticky-nav-icon {
+    margin-left: 1.2rem;
+}
+.sticky-nav-icon img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+@media (max-width:1000px){
+    .sticky-media{
+       display: none;
+    }
+    .sticky-nav-options .badge{
+        font-size: 0.7rem;
+        text-wrap:balance;
+    }
+}
+
+.sticky-nav-options .badge{
+    text-align: center;
+}
+
+.sticky-nav-options .badge,i{
+    margin-left: 1rem;
+}
+.sticky-nav-options .badge i{
+    margin-right: 0.5rem;
+}
+
+.sticky-nav-2col{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1.7rem;
+}
+.sticky-nav-2col button{
+    margin: 0 0.2rem 1.4rem 0.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.sticky-nav-2col-2,.sticky-nav-2col-3{
+    background-color: rgba(42, 42, 42, 0.721);
+    color: white;
+}
+.sticky-nav-2col-2:hover,.sticky-nav-2col-3:hover{
+    background-color: rgba(42, 42, 42, 0.95);
+}
+.cards-container{
+   display: flex;
+   flex-wrap: wrap;
+}
+h2{
+    color: white;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.1rem;
+}
+h2:hover{
+    color: white;
+    text-decoration:2px solid white underline;
+}
+ .card img{
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+.card{
+    background-color:  #2f2f2f15;
+    border-radius: 0.5rem;
+    width: 180px;
+    padding:0.6rem;
+    transition: 0.5s;
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+.card:hover{
+    background-color: #2f2f2f;
+}
+ .card-title{
+    font-size:0.98rem;
+    color: rgba(255, 255, 255, 0.808);
+    line-height: 0.01rem;
+    font-weight: 400;
+ }   
+.card-info{
+    color: white;
+    opacity: 0.5;
+    font-size: 0.77rem;
+    font-weight: 100;
+}
+
+.container-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 1rem 0 0.7rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    
+}
+.con-bot-1{
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+.con-bot-1-head{
+    color: white;
+}
+.con-bot-body{
+    color: rgba(255, 255, 255, 0.493); 
+}
+.con-bot-body:hover{
+    color: white;
+    text-decoration:1px solid white underline;
+}
+
+.con-bot-social{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 1.8rem;
+}
+
+.circle-card{
+    background-color:  #2f2f2f11;
+    border-radius: 0.5rem;
+    width: 250px;
+    padding:0.6rem;
+    transition: 0.5s;
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+.circle-card img{
+    width: 100%;
+    height: 75%;
+    border-radius: 50%;
+
+}
+.circle-card:hover{
+    background-color: #2f2f2f;
+}
+.circle-card-title{
+    font-size:0.98rem;
+    color: rgba(255, 255, 255, 0.808);
+    line-height: 0.01rem;
+    font-weight: 400;
+ }   
+.circle-card-info{
+    color: white;
+    opacity: 0.5;
+    font-size: 0.77rem;
+    font-weight: 100;
+}
+
+.footer{
+    bottom: 10px;
+    height: 8rem;
+    border-top: 1px solid rgb(62, 62, 62);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+    
+}
+.left-footer-con{
+    display: flex;
+   align-items: center;
+   list-style: none;
+}
+.right-footer-con {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: rgb(101, 99, 99);
+}
+.right-footer-con i{
+    margin-right:0.5rem;
+    
+}
+
+.left-footer-con li{
+    margin: 0 0.6rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.533);
+}
+.left-footer-con li:hover{
+    color: white;
+    opacity: 1;
+}
+.music-player {
+    background-color: black;
+    height: 85px;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    
+}
+.sidhu-player-icon img{
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 5px;
+  margin: 0 0.9rem 0 0.5rem;
+}
+.sidhu-player-title{
+  
+    justify-content: center;
+    align-items: start;
+    color: white;
+    line-height: 0.1rem;
+    
+}
+.sidhu-player-title .p1{
+    font-size: 0.9rem;
+}
+.sidhu-player-title .p2{
+    font-size: 0.7rem;
+    font-weight: 200;
+    opacity: 0.5;
+}
+.sidhu-player-title .p2:hover{
+    opacity: 0.7;
+}
+.player{
+    width: 50%;
+}
+.player-controls{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.controls{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1.9rem;
+    font-size: 1.2rem;
+    
+}
+.controls i:hover{
+    opacity: 0.7;
+}
+.controls i,span{
+    opacity: 0.5;
+    color: white;
+}
+.player-controls-icons{
+    margin-top: 0.2rem;
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-controls-icons:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: white;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(75, 215, 75);
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.progress-bars{
+    width: 25%;
+    appearance: none;
+    background-color: transparent;
+}
+.progress-bars::-webkit-slider-runnable-track{
+    background-color: white;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bars::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(75, 215, 75);
+    border-radius: 50%;
+    margin-top: -6px;
+}
